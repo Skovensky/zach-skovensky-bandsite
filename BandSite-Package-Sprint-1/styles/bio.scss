@@ -6,17 +6,29 @@
     url('../Font/Alternative files/AvenirNextLTPro.ttf') format('truetype');
 }
 
+body {
+    font-family: 'Avenirnext';
+}
+
 .bandsite__title {
     background-color:#323232;
-    flex-direction: column;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;    
 }
 
 .bandsite__header {
     color: #fff;
-    align-items:center ;
-    margin-left: 150px;
+    width: 100%;
+    text-align: center;
 } 
+
+.bandsite__hero {
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    max-height: 20px;
+    padding-top: 5%;
+}
 
 .bandsite__navbar {
     display: flex;
@@ -25,33 +37,72 @@
     justify-content: center;
     justify-content:space-evenly;
     font-family:'Avenirnext' ;
+    color: #fff;
+}
+
+.links {
+    text-decoration: none;
+    color: #fff;
+    font-size:10px;
+    font-weight: bold;
 }
 
 .banner{
     display: flex;
-    justify-content: space-around;
+    position: relative;
     font-family:'Avenirnext' ;
+    width: 100%;
+    }
+    
+    .banner__text{
+        position: absolute;
+        display: flex;
+        color: #fff;
+        font-family: 'Avenirnext';
+        top: 35%;
+        padding-left: 5%;
+        text-align: left;
+        font-size: 24px;
 }
 
 .banner__img {
-    width: 90%;
-    
+    width: 100%;
+   
+} 
+
+.img-tint {
+    width: 100%;
+    height: 100%;
+    background-color: #323232;
+    display: flex;
+    position: absolute;
+    opacity: 0.5;
 }
 
 .bandsite__band {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 90%;
+    align-items: center;
+    width: 100%;
+    font-family: 'Avenirnext';
 }
 
 .band__img {
-    width: 50px;
+    width: 95%;  
 }
 
-.bandsite__image {
-    width: 50%;
+h1 {
+    font-weight: bold;
+    padding-left: 3.5%;
 }
+
+p {
+    font-size: 13px;
+    font-weight: 400px;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
 
 .bandsite__gallery {
      
@@ -61,11 +112,31 @@
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include desktop {
+
+        }
     }
+
+    .bandsite__image {
+        width: 90%;
+        @include tablet {
+            width: 40%;
+        }
+        @include desktop {
+            width: 20%;
+        }
+    }
+
 }
 
 .bandsite__footer {
     background-color:#323232;
+
     color: #fff;
     width: 100%;
     font-family:'Avenirnext';
