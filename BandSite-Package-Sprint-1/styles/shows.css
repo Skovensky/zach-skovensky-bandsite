@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Avenirnext";
+  src: url("../3.0 - Assets/Font/AvenirNextLTPro-Regular.otf") format("OpenType"), url("../Font/Alternative files/AvenirNextLTPro.ttf") format("truetype");
+}
+body {
+  font-family: "Avenirnext";
+}
+
+.shows__title {
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+}
+
+.shows__header {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.shows__hero {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  max-height: 20px;
+  padding-top: 5%;
+}
+
+.shows__navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-family: "Avenirnext";
+  color: #fff;
+}
+
+.links {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  font-family: "Avenirnext";
+  width: 100%;
+}
+
+.banner__text {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  font-family: "Avenirnext";
+  top: 35%;
+  padding-left: 5%;
+  text-align: left;
+  font-size: 24px;
+}
+
+.banner__img {
+  width: 100%;
+}
+
+.img-tint {
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+  display: flex;
+  position: absolute;
+  opacity: 0.5;
+}
+
+h1 {
+  font-weight: bold;
+  padding-left: 3.5%;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400px;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+}
+
+.shows__footer {
+  background-color: #323232;
+  color: #fff;
+  width: 100%;
+  font-family: "Avenirnext";
+  font-size: 400;
+}
+
+.shows__h2 {
+  color: #000000;
+  font-family: "Avenirnext";
+  font-weight: 700;
+  font-size: large;
+}
+
+h3 {
+  color: #E1E1E1;
+  font-family: "Avenirnext";
+  font-weight: 300;
+  font-size: medium;
+}
+
+.shows {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .shows {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+}
+button {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=shows.css.map */

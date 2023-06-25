@@ -131,4 +131,30 @@ p {
   width: 100%;
   font-family: "Avenirnext";
   font-size: 400;
+}
+
+#comment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments__name {
+  margin-top: -230px;
+  margin-right: -230px;
+}
+
+.button__comment {
+  background-color: #323232;
+  color: #fff;
+  size: 90px;
+  width: 230px;
+  font-family: "Avenirnext";
+}
+
+.comments__convo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }/*# sourceMappingURL=bio.css.map */
