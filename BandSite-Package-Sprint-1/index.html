@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/bio.css">
     <link rel="stylesheet" href="./styles/partials/globals.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>BandSite</title>
 </head>
 <!-- after the header we will have a nav so people can easily acsess what they want on the site  -->
@@ -84,31 +85,32 @@
                 <div class="comments__name">
                     <input type="text" name="Name">
                 </div>
-                <div class="comeents__text">
+                <div class="comments__text">
                     <textarea name="comment" id="" cols="30" rows="10"></textarea>
-                    <p id="post"></p>
-                    <button class="button__comment">Comment</button>
+                    <!--<p id="post"></p>-->
+                    <button class="button__comment" type="submit">Comment</button>
                 </div>
-                <div class="comments__convo">
-                <p>Connor Walton</p>
-                <p>This is art. This is inexplicable magic
+                <div id="convo"></div>
+               <!-- <div class="comments__convo">
+                    <p>Connor Walton</p>
+                    <p>This is art. This is inexplicable magic
                     expressed in the purest way, everything
                     that makes up this majestic work
                     deserves reverence. Let us appreciate
                     this for what it is and what it contains.</p>
-                <p>Emilie Beach</p>
-                <p>I feel blessed to have seen them in
+                    <p>Emilie Beach</p>
+                    <p>I feel blessed to have seen them in
                     person. What a show! They were just
                     perfection. If there was one day of my
                     life I could relive, this would be it. What
                     an incredible day.</p>
-                <p>Miles Acosta </p>
-                <p>I can t stop listening. Every time I hear
+                    <p>Miles Acosta </p>
+                    <p>I can t stop listening. Every time I hear
                     one of their songs the vocals it gives
                     me goosebumps. Shivers straight down
                     my spine. What a beautiful expression of
                     creativity. Can t get enough.</p>
-                </div>
+                </div>-->
             </form>
         </div>
     </section>
